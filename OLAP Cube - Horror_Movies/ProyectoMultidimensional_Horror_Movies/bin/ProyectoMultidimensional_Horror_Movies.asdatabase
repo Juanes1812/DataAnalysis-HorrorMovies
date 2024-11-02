@@ -1,0 +1,1373 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ProyectoMultidimensional_Horror_Movies</ID>
+  <Name>ProyectoMultidimensional_Horror_Movies</Name>
+  <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T05:00:00Z</LastUpdate>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <Dimensions>
+    <Dimension>
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5266" scrolltop="-6170" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="4572" y="16087" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_date" left="-4341" top="-106" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a30e0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dim_date" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-5266</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-6170</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>-4341</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>-106</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Bd_DW_Horror_Movies1</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Date Release</ID>
+          <Name>Date Release</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>20</DataSize>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_date</TableID>
+                <ColumnID>date_release</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Year</AttributeID>
+              <Name>Year</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Month Name</AttributeID>
+              <Name>Month Name</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Day</AttributeID>
+              <Name>Day</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Day Name</AttributeID>
+              <Name>Day Name</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Week Of Year</AttributeID>
+              <Name>Week Of Year</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Quarter</AttributeID>
+              <Name>Quarter</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Month</AttributeID>
+              <Name>Month</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Year</ID>
+          <Name>Year</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_date</TableID>
+                <ColumnID>year</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Month Name</ID>
+          <Name>Month Name</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>20</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_date</TableID>
+                <ColumnID>month_name</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Day</ID>
+          <Name>Day</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_date</TableID>
+                <ColumnID>day</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Day Name</ID>
+          <Name>Day Name</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>20</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_date</TableID>
+                <ColumnID>day_name</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Week Of Year</ID>
+          <Name>Week Of Year</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_date</TableID>
+                <ColumnID>week_of_year</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Quarter</ID>
+          <Name>Quarter</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_date</TableID>
+                <ColumnID>quarter</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Month</ID>
+          <Name>Month</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_date</TableID>
+                <ColumnID>month</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Genre</ID>
+      <Name>Dim Genre</Name>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-766" scrolltop="-7249" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="4572" y="16087" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_genre" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000034060000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dim_genre" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-766</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-7249</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Bd_DW_Horror_Movies1</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Genre Id</ID>
+          <Name>Genre Id</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_genre</TableID>
+                <ColumnID>genre_id</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Genre Name</AttributeID>
+              <Name>Genre Name</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Genre Name</ID>
+          <Name>Genre Name</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>300</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_genre</TableID>
+                <ColumnID>genre_name</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Language</ID>
+      <Name>Dim Language</Name>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3081" scrolltop="-7366" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9673" y="16320" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_language" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3471" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00008f0d000034060000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dim_language" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-3081</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-7366</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Bd_DW_Horror_Movies1</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Language Id</ID>
+          <Name>Language Id</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_language</TableID>
+                <ColumnID>language_id</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Original Language</AttributeID>
+              <Name>Original Language</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Original Language</ID>
+          <Name>Original Language</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dim_language</TableID>
+                <ColumnID>original_language</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Fact Movies</ID>
+      <Name>Fact Movies</Name>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="489" scrolltop="-6107" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="4572" y="16087" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="fact_movies" left="719" top="-127" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4106" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00000a100000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_fact_movies" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>489</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-6107</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>719</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>-127</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Bd_DW_Horror_Movies1</DataSourceViewID>
+      </Source>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_fact_movies</TableID>
+                <ColumnID>id</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Release Date</AttributeID>
+              <Name>Release Date</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Genre Id</AttributeID>
+              <Name>Genre Id</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Language Id</AttributeID>
+              <Name>Language Id</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Title</AttributeID>
+              <Name>Title</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Popularity</AttributeID>
+              <Name>Popularity</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Vote Count</AttributeID>
+              <Name>Vote Count</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Vote Average</AttributeID>
+              <Name>Vote Average</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Runtime</AttributeID>
+              <Name>Runtime</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Release Date</ID>
+          <Name>Release Date</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>20</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_fact_movies</TableID>
+                <ColumnID>release_date</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Genre Id</ID>
+          <Name>Genre Id</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_fact_movies</TableID>
+                <ColumnID>genre_id</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Language Id</ID>
+          <Name>Language Id</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_fact_movies</TableID>
+                <ColumnID>language_id</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <OrderBy>Key</OrderBy>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Title</ID>
+          <Name>Title</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>300</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_fact_movies</TableID>
+                <ColumnID>title</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Popularity</ID>
+          <Name>Popularity</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_fact_movies</TableID>
+                <ColumnID>popularity</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Vote Count</ID>
+          <Name>Vote Count</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_fact_movies</TableID>
+                <ColumnID>vote_count</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Vote Average</ID>
+          <Name>Vote Average</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_fact_movies</TableID>
+                <ColumnID>vote_average</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Runtime</ID>
+          <Name>Runtime</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_fact_movies</TableID>
+                <ColumnID>runtime</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+  </Dimensions>
+  <Cubes>
+    <Cube>
+      <ID>Bd_DW_Horror_Movies1</ID>
+      <Name>Bd_DW_Horror_Movies1</Name>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4939" scrolltop="-242" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="123" x="24426" y="2942" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_date" left="5655" top="4167" logicalid="8" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a30e0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dim_date" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="fact_movies" left="255" top="3988" logicalid="9" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="4106" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00000a100000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_fact_movies" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_language" left="20" top="0" logicalid="10" controlid="3" masterid="0" hint1="0" hint2="0" width="3471" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00008f0d000034060000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dim_language" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_genre" left="255" top="10494" logicalid="11" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000034060000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dim_genre" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2955" top="5641" logicalid="12" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK__fact_movi__relea__3F466844]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="16" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="5655" y="6040" />
+                  <point x="4455" y="6040" />
+                  <point x="4455" y="6041" />
+                  <point x="3255" y="6041" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="1356" top="7794" logicalid="13" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK__fact_movi__genre__3D5E1FD2]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="1755" y="10494" />
+                  <point x="1755" y="8094" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="1356" top="1089" logicalid="14" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK__fact_movi__langu__3E52440B]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="1755" y="1588" />
+                  <point x="1755" y="3988" />
+                </connector>
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-4939</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-242</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>123</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Dimensions>
+        <Dimension>
+          <ID>Fact Movies</ID>
+          <Name>Fact Movies</Name>
+          <DimensionID>Fact Movies</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Release Date</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Genre Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Language Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Title</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Popularity</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Vote Count</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Vote Average</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Runtime</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Dim Genre</ID>
+          <Name>Dim Genre</Name>
+          <DimensionID>Dim Genre</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Genre Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Genre Name</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Dim Language</ID>
+          <Name>Dim Language</Name>
+          <DimensionID>Dim Language</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Language Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Original Language</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Dim Date</ID>
+          <Name>Dim Date</Name>
+          <DimensionID>Dim Date</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Date Release</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Year</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Month Name</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Day</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Day Name</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Week Of Year</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Month</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup>
+          <ID>Fact Movies</ID>
+          <Name>Fact Movies</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Measures>
+            <Measure>
+              <ID>Popularity</ID>
+              <Name>Popularity</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_fact_movies</TableID>
+                  <ColumnID>popularity</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Vote Count</ID>
+              <Name>Vote Count</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_fact_movies</TableID>
+                  <ColumnID>vote_count</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Vote Average</ID>
+              <Name>Vote Average</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_fact_movies</TableID>
+                  <ColumnID>vote_average</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Runtime</ID>
+              <Name>Runtime</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_fact_movies</TableID>
+                  <ColumnID>runtime</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Recuento Fact Movies</ID>
+              <Name>Recuento Fact Movies</Name>
+              <AggregateFunction>Count</AggregateFunction>
+              <Source>
+                <DataType>Integer</DataType>
+                <DataSize>4</DataSize>
+                <Source xsi:type="RowBinding">
+                  <TableID>dbo_fact_movies</TableID>
+                </Source>
+              </Source>
+            </Measure>
+          </Measures>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <Dimensions>
+            <Dimension xsi:type="DegenerateMeasureGroupDimension">
+              <CubeDimensionID>Fact Movies</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Id</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_fact_movies</TableID>
+                        <ColumnID>id</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Release</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>WChar</DataType>
+                      <DataSize>20</DataSize>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_fact_movies</TableID>
+                        <ColumnID>release_date</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Genre</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Genre Id</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_fact_movies</TableID>
+                        <ColumnID>genre_id</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Language</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Language Id</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_fact_movies</TableID>
+                        <ColumnID>language_id</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Partitions>
+            <Partition>
+              <ID>Fact Movies</ID>
+              <Name>Fact Movies</Name>
+              <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+              <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+              <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+              <State>Unprocessed</State>
+              <Source xsi:type="DsvTableBinding">
+                <DataSourceViewID>Bd_DW_Horror_Movies1</DataSourceViewID>
+                <TableID>dbo_fact_movies</TableID>
+              </Source>
+              <StorageMode>Molap</StorageMode>
+              <CurrentStorageMode>Molap</CurrentStorageMode>
+              <ProcessingMode>Regular</ProcessingMode>
+            </Partition>
+          </Partitions>
+        </MeasureGroup>
+      </MeasureGroups>
+      <Source>
+        <DataSourceViewID>Bd_DW_Horror_Movies1</DataSourceViewID>
+      </Source>
+    </Cube>
+  </Cubes>
+  <DataSources>
+    <DataSource xsi:type="RelationalDataSource">
+      <ID>Bd_DW_Horror_Movies1</ID>
+      <Name>DW_Horror_Movies1</Name>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <ConnectionString>Provider=SQLNCLI11.1;Data Source=LAPTOP-APTRAI0M\SQLEXPRESS;Persist Security Info=True;Password=;User ID=;Initial Catalog=DWHorrorMovies1</ConnectionString>
+      <ConnectionStringSecurity>PasswordRemoved</ConnectionStringSecurity>
+      <ImpersonationInfo>
+        <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+        <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+      </ImpersonationInfo>
+      <Timeout>PT0S</Timeout>
+    </DataSource>
+  </DataSources>
+  <DataSourceViews>
+    <DataSourceView>
+      <ID>Bd_DW_Horror_Movies1</ID>
+      <Name>Bd_DW_Horror_Movies1</Name>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+          <Value>_ALL_TABLES_</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+          <Value>
+            <Layouts xmlns="">
+              <Diagram>
+                <Name>_ALL_TABLES_</Name>
+                <DiagramLayout />
+                <ShowRelationshipNames>False</ShowRelationshipNames>
+                <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                <DiagramViewPortLeft>0</DiagramViewPortLeft>
+                <DiagramViewPortTop>0</DiagramViewPortTop>
+                <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                <DiagramBoundingTop>0</DiagramBoundingTop>
+                <DiagramZoom>100</DiagramZoom>
+              </Diagram>
+            </Layouts>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <DataSourceID>Bd_DW_Horror_Movies1</DataSourceID>
+      <Schema>
+        <xs:schema id="Bd_DW_Horror_Movies1" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="Bd_DW_Horror_Movies1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e4b264b7-6b0a-4eff-b68e-d16252e130ba">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="dbo_fact_movies" msprop:design-time-name="35c3c61c-1ae8-4b84-ab6c-e79b50198bb9" msprop:FriendlyName="fact_movies" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="fact_movies">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="5d316d02-e4c5-4060-a357-25420be3574e" type="xs:int" />
+                      <xs:element name="title" msprop:FriendlyName="title" msprop:DbColumnName="title" msprop:design-time-name="236e7b0a-928d-4430-a323-dba6949c77f4" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="300" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="popularity" msprop:FriendlyName="popularity" msprop:DbColumnName="popularity" msprop:design-time-name="8268e7e5-b6cd-4344-a9b1-f21c6cf8aa3f" type="xs:int" minOccurs="0" />
+                      <xs:element name="vote_count" msprop:FriendlyName="vote_count" msprop:DbColumnName="vote_count" msprop:design-time-name="e0f8141d-d957-4ff9-af81-a31d8d72db8d" type="xs:int" minOccurs="0" />
+                      <xs:element name="vote_average" msprop:FriendlyName="vote_average" msprop:DbColumnName="vote_average" msprop:design-time-name="c6d9dd87-5baf-4760-a10a-84dad10410cf" type="xs:int" minOccurs="0" />
+                      <xs:element name="runtime" msprop:FriendlyName="runtime" msprop:DbColumnName="runtime" msprop:design-time-name="da7e239d-a937-47b8-8cb5-0f968b7a0238" type="xs:int" minOccurs="0" />
+                      <xs:element name="genre_id" msprop:FriendlyName="genre_id" msprop:DbColumnName="genre_id" msprop:design-time-name="467a910f-88a9-46b5-baf6-68c5b93964f0" type="xs:int" minOccurs="0" />
+                      <xs:element name="language_id" msprop:FriendlyName="language_id" msprop:DbColumnName="language_id" msprop:design-time-name="1c176ba4-35e3-4645-b758-509c1c79244a" type="xs:int" minOccurs="0" />
+                      <xs:element name="release_date" msprop:FriendlyName="release_date" msprop:DbColumnName="release_date" msprop:design-time-name="a15bbeca-349a-4c46-8284-92048442a1a4" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="20" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_dim_date" msprop:design-time-name="2e67dc1c-5669-4a9d-8ab8-3a7f8b26fb87" msprop:FriendlyName="dim_date" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_date">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="date_release" msprop:FriendlyName="date_release" msprop:DbColumnName="date_release" msprop:design-time-name="9cc38c6b-b4ff-4773-bc86-dc97d4cbd2e2">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="20" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="year" msprop:FriendlyName="year" msprop:DbColumnName="year" msprop:design-time-name="0962122e-4011-4a02-b52e-26763aa9128b" type="xs:int" minOccurs="0" />
+                      <xs:element name="month" msprop:FriendlyName="month" msprop:DbColumnName="month" msprop:design-time-name="9bc66f50-9fb0-4292-a129-d5e1ac84eb5a" type="xs:int" minOccurs="0" />
+                      <xs:element name="month_name" msprop:FriendlyName="month_name" msprop:DbColumnName="month_name" msprop:design-time-name="e3947732-b3b7-4cdb-bdca-c39597d48224" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="20" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="day" msprop:FriendlyName="day" msprop:DbColumnName="day" msprop:design-time-name="b5ba7b7a-8f84-4e36-a7b6-f6f3c6d14e49" type="xs:int" minOccurs="0" />
+                      <xs:element name="day_name" msprop:FriendlyName="day_name" msprop:DbColumnName="day_name" msprop:design-time-name="ca7cd4b8-e21e-4ba9-ba85-57c5f5432298" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="20" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="week_of_year" msprop:FriendlyName="week_of_year" msprop:DbColumnName="week_of_year" msprop:design-time-name="1c98cb8f-b0f6-4771-9f06-019c6a289382" type="xs:int" minOccurs="0" />
+                      <xs:element name="quarter" msprop:FriendlyName="quarter" msprop:DbColumnName="quarter" msprop:design-time-name="dc6f5b08-d8b0-4bc0-bb94-132884ce40a1" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_dim_genre" msprop:design-time-name="2e622591-0daa-4526-a666-ad62f4054ec7" msprop:FriendlyName="dim_genre" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_genre">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="genre_id" msprop:FriendlyName="genre_id" msprop:DbColumnName="genre_id" msprop:design-time-name="bb7ede2a-c6e9-48a8-8bc6-4a2e27dfb46a" type="xs:int" />
+                      <xs:element name="genre_name" msprop:FriendlyName="genre_name" msprop:DbColumnName="genre_name" msprop:design-time-name="41af88f3-1ceb-4270-88ce-4ae18697ba2d" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="300" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_dim_language" msprop:design-time-name="6dc9a5ff-32af-4a1b-9be2-f597f1cdca4a" msprop:FriendlyName="dim_language" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_language">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="language_id" msprop:FriendlyName="language_id" msprop:DbColumnName="language_id" msprop:design-time-name="4d9beb86-bce8-4356-b238-e7830f48c279" type="xs:int" />
+                      <xs:element name="original_language" msprop:FriendlyName="original_language" msprop:DbColumnName="original_language" msprop:design-time-name="9db22bc5-6d9b-4b9a-9d8b-c4f0764da73e" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+            <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_fact_movies" />
+              <xs:field xpath="id" />
+            </xs:unique>
+            <xs:unique name="dbo_dim_date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_dim_date" />
+              <xs:field xpath="date_release" />
+            </xs:unique>
+            <xs:unique name="dbo_dim_genre_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_dim_genre" />
+              <xs:field xpath="genre_id" />
+            </xs:unique>
+            <xs:unique name="dbo_dim_language_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_dim_language" />
+              <xs:field xpath="language_id" />
+            </xs:unique>
+            <xs:keyref name="FK__fact_movi__relea__3F466844" refer="dbo_dim_date_Constraint1">
+              <xs:selector xpath=".//dbo_fact_movies" />
+              <xs:field xpath="release_date" />
+            </xs:keyref>
+            <xs:keyref name="FK__fact_movi__genre__3D5E1FD2" refer="dbo_dim_genre_Constraint1">
+              <xs:selector xpath=".//dbo_fact_movies" />
+              <xs:field xpath="genre_id" />
+            </xs:keyref>
+            <xs:keyref name="FK__fact_movi__langu__3E52440B" refer="dbo_dim_language_Constraint1">
+              <xs:selector xpath=".//dbo_fact_movies" />
+              <xs:field xpath="language_id" />
+            </xs:keyref>
+          </xs:element>
+        </xs:schema>
+        <Bd_DW_Horror_Movies1 xmlns="" />
+      </Schema>
+    </DataSourceView>
+  </DataSourceViews>
+</Database>

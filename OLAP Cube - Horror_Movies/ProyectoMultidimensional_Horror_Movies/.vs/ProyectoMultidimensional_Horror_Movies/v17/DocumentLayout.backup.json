@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA22499D-9E15-42C0-BA4C-EC0674062EFA}|ProyectoMultidimensional_Horror_Movies.dwproj|C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Bd_DW_Horror_Movies1.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{FA22499D-9E15-42C0-BA4C-EC0674062EFA}|ProyectoMultidimensional_Horror_Movies.dwproj|solutionrelative:Bd_DW_Horror_Movies1.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA22499D-9E15-42C0-BA4C-EC0674062EFA}|ProyectoMultidimensional_Horror_Movies.dwproj|C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Fact Movies.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{FA22499D-9E15-42C0-BA4C-EC0674062EFA}|ProyectoMultidimensional_Horror_Movies.dwproj|solutionrelative:Fact Movies.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA22499D-9E15-42C0-BA4C-EC0674062EFA}|ProyectoMultidimensional_Horror_Movies.dwproj|C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Dim Language.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{FA22499D-9E15-42C0-BA4C-EC0674062EFA}|ProyectoMultidimensional_Horror_Movies.dwproj|solutionrelative:Dim Language.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA22499D-9E15-42C0-BA4C-EC0674062EFA}|ProyectoMultidimensional_Horror_Movies.dwproj|C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Dim Genre.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{FA22499D-9E15-42C0-BA4C-EC0674062EFA}|ProyectoMultidimensional_Horror_Movies.dwproj|solutionrelative:Dim Genre.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA22499D-9E15-42C0-BA4C-EC0674062EFA}|ProyectoMultidimensional_Horror_Movies.dwproj|C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{FA22499D-9E15-42C0-BA4C-EC0674062EFA}|ProyectoMultidimensional_Horror_Movies.dwproj|solutionrelative:Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 131,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Fact Movies.dim [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Fact Movies.dim",
+              "RelativeDocumentMoniker": "Fact Movies.dim",
+              "ToolTip": "C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Fact Movies.dim [Dise\u00F1o]",
+              "RelativeToolTip": "Fact Movies.dim [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-17T23:30:14.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bd_DW_Horror_Movies1.cube [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Bd_DW_Horror_Movies1.cube",
+              "RelativeDocumentMoniker": "Bd_DW_Horror_Movies1.cube",
+              "ToolTip": "C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Bd_DW_Horror_Movies1.cube [Dise\u00F1o]",
+              "RelativeToolTip": "Bd_DW_Horror_Movies1.cube [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-17T23:15:09.414Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dim Language.dim [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Dim Language.dim",
+              "RelativeDocumentMoniker": "Dim Language.dim",
+              "ToolTip": "C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Dim Language.dim [Dise\u00F1o]",
+              "RelativeToolTip": "Dim Language.dim [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-17T23:30:08.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dim Genre.dim [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Dim Genre.dim",
+              "RelativeDocumentMoniker": "Dim Genre.dim",
+              "ToolTip": "C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Dim Genre.dim [Dise\u00F1o]",
+              "RelativeToolTip": "Dim Genre.dim [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-17T23:28:32.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dim Date.dim [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Dim Date.dim",
+              "RelativeDocumentMoniker": "Dim Date.dim",
+              "ToolTip": "C:\\Users\\valen\\OneDrive\\Escritorio\\Basura de Juanes\\ProyectoMultidimensional_Horror_Movies\\Dim Date.dim [Dise\u00F1o]",
+              "RelativeToolTip": "Dim Date.dim [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-17T23:16:21.975Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 131,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

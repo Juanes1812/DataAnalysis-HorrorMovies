@@ -1,0 +1,169 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e210cfe6-526f-43fd-b053-005fa8bc5540" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Bd_DW_Horror_Movies1</ID>
+  <Name>Bd_DW_Horror_Movies1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Bd_DW_Horror_Movies1</DataSourceID>
+  <Schema>
+    <xs:schema id="Bd_DW_Horror_Movies1" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Bd_DW_Horror_Movies1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e4b264b7-6b0a-4eff-b68e-d16252e130ba">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fact_movies" msprop:DbTableName="fact_movies" msprop:FriendlyName="fact_movies" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="35c3c61c-1ae8-4b84-ab6c-e79b50198bb9">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="5d316d02-e4c5-4060-a357-25420be3574e" type="xs:int" />
+                  <xs:element name="title" msprop:FriendlyName="title" msprop:DbColumnName="title" msprop:design-time-name="236e7b0a-928d-4430-a323-dba6949c77f4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="popularity" msprop:FriendlyName="popularity" msprop:DbColumnName="popularity" msprop:design-time-name="8268e7e5-b6cd-4344-a9b1-f21c6cf8aa3f" type="xs:int" minOccurs="0" />
+                  <xs:element name="vote_count" msprop:FriendlyName="vote_count" msprop:DbColumnName="vote_count" msprop:design-time-name="e0f8141d-d957-4ff9-af81-a31d8d72db8d" type="xs:int" minOccurs="0" />
+                  <xs:element name="vote_average" msprop:FriendlyName="vote_average" msprop:DbColumnName="vote_average" msprop:design-time-name="c6d9dd87-5baf-4760-a10a-84dad10410cf" type="xs:int" minOccurs="0" />
+                  <xs:element name="runtime" msprop:FriendlyName="runtime" msprop:DbColumnName="runtime" msprop:design-time-name="da7e239d-a937-47b8-8cb5-0f968b7a0238" type="xs:int" minOccurs="0" />
+                  <xs:element name="genre_id" msprop:FriendlyName="genre_id" msprop:DbColumnName="genre_id" msprop:design-time-name="467a910f-88a9-46b5-baf6-68c5b93964f0" type="xs:int" minOccurs="0" />
+                  <xs:element name="language_id" msprop:FriendlyName="language_id" msprop:DbColumnName="language_id" msprop:design-time-name="1c176ba4-35e3-4645-b758-509c1c79244a" type="xs:int" minOccurs="0" />
+                  <xs:element name="release_date" msprop:FriendlyName="release_date" msprop:DbColumnName="release_date" msprop:design-time-name="a15bbeca-349a-4c46-8284-92048442a1a4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_date" msprop:DbTableName="dim_date" msprop:FriendlyName="dim_date" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="2e67dc1c-5669-4a9d-8ab8-3a7f8b26fb87">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="date_release" msprop:FriendlyName="date_release" msprop:DbColumnName="date_release" msprop:design-time-name="9cc38c6b-b4ff-4773-bc86-dc97d4cbd2e2">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="year" msprop:FriendlyName="year" msprop:DbColumnName="year" msprop:design-time-name="0962122e-4011-4a02-b52e-26763aa9128b" type="xs:int" minOccurs="0" />
+                  <xs:element name="month" msprop:FriendlyName="month" msprop:DbColumnName="month" msprop:design-time-name="9bc66f50-9fb0-4292-a129-d5e1ac84eb5a" type="xs:int" minOccurs="0" />
+                  <xs:element name="month_name" msprop:FriendlyName="month_name" msprop:DbColumnName="month_name" msprop:design-time-name="e3947732-b3b7-4cdb-bdca-c39597d48224" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="day" msprop:FriendlyName="day" msprop:DbColumnName="day" msprop:design-time-name="b5ba7b7a-8f84-4e36-a7b6-f6f3c6d14e49" type="xs:int" minOccurs="0" />
+                  <xs:element name="day_name" msprop:FriendlyName="day_name" msprop:DbColumnName="day_name" msprop:design-time-name="ca7cd4b8-e21e-4ba9-ba85-57c5f5432298" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="week_of_year" msprop:FriendlyName="week_of_year" msprop:DbColumnName="week_of_year" msprop:design-time-name="1c98cb8f-b0f6-4771-9f06-019c6a289382" type="xs:int" minOccurs="0" />
+                  <xs:element name="quarter" msprop:FriendlyName="quarter" msprop:DbColumnName="quarter" msprop:design-time-name="dc6f5b08-d8b0-4bc0-bb94-132884ce40a1" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_genre" msprop:DbTableName="dim_genre" msprop:FriendlyName="dim_genre" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="2e622591-0daa-4526-a666-ad62f4054ec7">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="genre_id" msprop:FriendlyName="genre_id" msprop:DbColumnName="genre_id" msprop:design-time-name="bb7ede2a-c6e9-48a8-8bc6-4a2e27dfb46a" type="xs:int" />
+                  <xs:element name="genre_name" msprop:FriendlyName="genre_name" msprop:DbColumnName="genre_name" msprop:design-time-name="41af88f3-1ceb-4270-88ce-4ae18697ba2d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_language" msprop:DbTableName="dim_language" msprop:FriendlyName="dim_language" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="6dc9a5ff-32af-4a1b-9be2-f597f1cdca4a">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="language_id" msprop:FriendlyName="language_id" msprop:DbColumnName="language_id" msprop:design-time-name="4d9beb86-bce8-4356-b238-e7830f48c279" type="xs:int" />
+                  <xs:element name="original_language" msprop:FriendlyName="original_language" msprop:DbColumnName="original_language" msprop:design-time-name="9db22bc5-6d9b-4b9a-9d8b-c4f0764da73e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_fact_movies" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_date" />
+          <xs:field xpath="date_release" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_genre_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_genre" />
+          <xs:field xpath="genre_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_language_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_language" />
+          <xs:field xpath="language_id" />
+        </xs:unique>
+        <xs:keyref name="FK__fact_movi__langu__3E52440B" refer="dbo_dim_language_Constraint1">
+          <xs:selector xpath=".//dbo_fact_movies" />
+          <xs:field xpath="language_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__fact_movi__genre__3D5E1FD2" refer="dbo_dim_genre_Constraint1">
+          <xs:selector xpath=".//dbo_fact_movies" />
+          <xs:field xpath="genre_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__fact_movi__relea__3F466844" refer="dbo_dim_date_Constraint1">
+          <xs:selector xpath=".//dbo_fact_movies" />
+          <xs:field xpath="release_date" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Bd_DW_Horror_Movies1 xmlns="" />
+  </Schema>
+</DataSourceView>
